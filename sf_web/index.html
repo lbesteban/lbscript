@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.0.2.2 (Windows)">
+	<META NAME="AUTHOR" CONTENT="Luis Esteban Giner">
+	<META NAME="CREATED" CONTENT="20101214;15440700">
+	<META NAME="CHANGED" CONTENT="20130517;2421926">
+	<META NAME="CHANGEDBY" CONTENT="Luis Esteban Giner">
+	<META NAME="CHANGEDBY" CONTENT="Luis Esteban Giner">
+	<META NAME="CHANGEDBY" CONTENT="Luis Esteban Giner">
+</HEAD>
+<BODY LANG="en-US" DIR="LTR"><SPAN CLASS="sd-abs-pos" STYLE="position: absolute; top: 1.52cm; left: 14.43cm; width: 143px">
+<IMG SRC="lbscript_html_m4f0d2822.png" NAME="graphics6" WIDTH=143 HEIGHT=195 BORDER=0></SPAN>
+<P><BR><BR>
+</P>
+<H1>LBSCRIPT 2.0 &ndash; 
+</H1>
+<P>Project: <A HREF="https://sourceforge.net/projects/lbscript/">https://sourceforge.net/projects/lbscript/</A>
+</P>
+<H1>Sapgui scripting made easy</H1>
+<P>Note: LBScript users in Excel or VBA use the <A HREF="/lbscript_excel.html">old
+version of this tool</A></P>
+<P><FONT COLOR="#000000"><FONT COLOR="#000000"><IMG SRC="lbscript_html_1f50441c.png" NAME="graphics7" ALIGN=BOTTOM WIDTH=521 HEIGHT=279 BORDER=1></FONT></FONT>
+<FONT COLOR="#000000">
+<FONT COLOR="#000000"><IMG SRC="lbscript_html_m3df3c350.png" NAME="graphics5" ALIGN=BOTTOM WIDTH=537 HEIGHT=231 BORDER=1></FONT></FONT></P>
+<H1>What is LBSCRIPT about ?</H1>
+<P>SAP Gui family has a powerful scripting engine which can be used
+to automate data entry to SAP Netweaver by using the sapgui frontend,
+after combining this feature with the power of an interpreted simple
+language with a syntax like VBScript the result is a simple batch
+interpreter for SAPGUI commands.</P>
+<H1>For what could I use this ?</H1>
+<UL>
+	<LI><P>To perform automatically repetitive tasks which are time
+	consuming like create hundreds of users, roles, add multiple (and
+	different) profiles to users, etc.</P>
+	<LI><P>To simulate workloads</P>
+	<LI><P>To perform fast data entry</P>
+	<LI><P>to integrate heterogeneous solutions with SAP (actually a
+	truck weighting scale for a cement factory was my first integration)</P>
+	<LI><P>etc. up to you ...</P>
+</UL>
+<P>It has been really useful for me to automate the daily system
+check for an ABAP Based SAP Netweaver system.</P>
+<H1>First steps</H1>
+<OL>
+	<LI><P>Have installed a working version of SAP Netweaver Frontend</P>
+	<LI><P><SPAN LANG="en-US">Grab the </SPAN><SPAN LANG="en-US">latest
+	installer </SPAN><SPAN LANG="en-US">file </SPAN><SPAN LANG="en-US">from
+	the project <A HREF="https://sourceforge.net/projects/lbscript/">https://sourceforge.net/projects/lbscript/</A>
+	</SPAN>
+	</P>
+	<LI><P>Set to SAPGUI scripting TRUE on your ABAP Netweaver System</P>
+	<LI><P><SPAN LANG="en-US">Install </SPAN><SPAN LANG="en-US">LBDemo_Installer_&lt;version&gt;.exe</SPAN><SPAN LANG="en-US">,
+	this will install a somehow nice frontend for the LBScript object,
+	which is just a sapgui script interpreter </SPAN>
+	</P>
+	<LI><P>(optional, but recommended) if you skip to step six your
+	scripting window will look kind of ugly even worse than a pre-enjoy
+	sap sapgui window, to use the new and nice look and feel you have to
+	grant permission to use new look&amp;feel to sapgui control in
+	control panel</P>
+	<OL>
+		<LI><P>Control panel &rarr; Look&amp;feel or something like this
+		(apariencia y configuracion in Spanish)<BR><BR><FONT COLOR="#000000"><FONT COLOR="#000000"><IMG SRC="lbscript_html_m1be07eb.gif" NAME="graphics3" ALIGN=BOTTOM WIDTH=599 HEIGHT=386 BORDER=1></FONT></FONT><BR><BR><BR><BR>
+		</P>
+		<LI><P>And add the program you want to use the new visual
+		design<BR><BR><BR><FONT COLOR="#000000"><FONT COLOR="#000000"><IMG SRC="lbscript_html_m23dfb766.gif" NAME="graphics4" ALIGN=BOTTOM WIDTH=599 HEIGHT=239 BORDER=1></FONT></FONT><BR><BR><BR><BR>
+		</P>
+	</OL>
+	<LI><P>If everything is fine a shortcut to the program will be
+	installed, start it and it will look like this</P>
+</OL>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<P ALIGN=CENTER><FONT COLOR="#000000"><FONT COLOR="#000000"><IMG SRC="lbscript_html_6aa04c33.jpg" NAME="graphics1" ALIGN=BOTTOM WIDTH=546 HEIGHT=214 BORDER=1></FONT></FONT></P>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<OL START=7>
+	<LI><P>.Now press &ldquo;Load script button&rdquo; and select in the
+	same folder as LBDemo is installed the VBS file, an excellent syntax
+	highlighter will make it look just fine (thanks Scintilla.NET
+	project team)</P>
+</OL>
+<P ALIGN=CENTER><BR><BR>
+</P>
+<P ALIGN=CENTER><FONT COLOR="#000000"><FONT COLOR="#000000"><IMG SRC="lbscript_html_m5266799f.jpg" NAME="graphics2" ALIGN=BOTTOM WIDTH=674 HEIGHT=353 BORDER=1></FONT></FONT></P>
+<OL START=8>
+	<LI><P>After filling some correct logon data line number six, just
+	press Start button and a sapgui window will popup and begin
+	processing the actions in there</P>
+</OL>
+<P><BR><BR>
+</P>
+<H1>Bugs and new features</H1>
+<P>You can contact me in contact details and if this is a feature
+good to have we can add this to the feature list., I still have
+issues with some of them so any help with undocumented features and
+so will be appreciated.</P>
+<P><BR><BR>
+</P>
+<H1>Contact:</H1>
+<P>Check out my profile in LinkedIn 
+</P>
+<P><SPAN LANG="en-US">Luis Esteban </SPAN>&rarr;
+<SPAN LANG="en-US"><A HREF="http://www.linkedin.com/in/luisesteban">http://www.linkedin.com/in/luisesteban</A>
+</SPAN>
+</P>
+<P><SPAN LANG="en-US">Or in SCN </SPAN>&rarr;
+<SPAN LANG="en-US"><A HREF="http://scn.sap.com/people/luis.esteban">http://scn.sap.com/people/luis.esteban</A>
+</SPAN>
+</P>
+<P><BR><BR>
+</P>
+<H1>Troubleshooting</H1>
+<P><B>Symptom</B>: The interface looks awful, this sucks.</P>
+<P><B>Solution</B>: The application has to be enabled in the &ldquo;SAP
+Configuration&rdquo; in the control panel 
+</P>
+<P>In the main project page there are two screenshots of a user
+creation with fast and ugly interface and the fancy but slower one,
+just choose whichever you like.</P>
+<P><BR><BR>
+</P>
+<P><B>Symptom</B>: It does not work.</P>
+<P><B>Solution</B>: Check it SAPGUI is completely installed and
+scripting is enabled in the ABAP system via setting the correct RZ11
+parameters and the user has rights to start scripts</P>
+<P><BR><BR>
+</P>
+<P><B>Symptom</B>: The script behaves differently in different
+computers.</P>
+<P><B>Solution</B>: Because this is only sending commands to your
+sapgui frontend, and your sapgui configurations differ, for example,
+in PFCG you can set to show the organizational assignment of a role
+or no to show it.</P>
+<P><BR><BR>
+</P>
+<P><B>Symptom</B>: I want a feature added to the LBScript object</P>
+<P><B>Solution</B>: If the feature is good for all us to use we can
+add it to LBScript class,in such case you can either request it to me
+via email or code it yourself and send me the code, and you will be
+mentioned in next releases (hoping this is not the last one) 
+</P>
+<P><BR><BR>
+</P>
+<P><B>Symptom</B>: Man, it's hard to say but &hellip;. this web page
+sucks.</P>
+<P><B>Solution</B>: Yes I know, I did this web page with LibreOffice
+word processor, I don't like it either! But it explains what it takes
+for you to use the scripting tool. 
+</P>
+<P><B>Symptom</B>: &hellip; why this ?</P>
+<P><B>Solution</B>: once you have to create 5k user profiles and
+create with them another 5k composite roles with the profile
+generator you will understand. 
+</P>
+</BODY>
+</HTML>
